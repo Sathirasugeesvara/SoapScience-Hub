@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 40px;
-    background-color: #2bb3a3;
+    background-color: #2bb3a3; 
     color: white;
 }
 
@@ -28,19 +28,22 @@
 }
 
 .navbar nav a:hover {
-    color: #025148;
+    color: #025148; 
 }
 
 .home-content {
     padding: 100px 20px;
     text-align: center;
-    background-color: #f7fbfa;
+    background-color: #f7fbfa; 
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 20px auto;
 }
 
 .home-content h1 {
     font-size: 50px;
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: #2c3e50; 
 }
 
 .home-content p {
@@ -73,7 +76,7 @@
 
 .card:hover {
     transform: translateY(-12px) scale(1.03);
-    box-shadow: 0 15px 35px rgba(43,179,163,0.35);
+    box-shadow: 0 15px 35px rgba(43,179,163,0.35); 
 }
 
 .card h3 {
@@ -82,19 +85,53 @@
 }
 
 .card p {
-    color: #555;
+    color: #555; 
     line-height: 1.5;
 }
 
+.about-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.about-section {
+    margin-bottom: 60px;
+}
+
+.about-section h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2bb3a3;
+}
+
+.about-section p, .about-section ul {
+    color: #555;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
 .footer {
-    background-color: #2bb3a3;
+    background-color: #2bb3a3; 
     color: white;
     text-align: center;
     padding: 30px;
     margin-top: 60px;
 }
 
-/* 📱 MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
 
     .navbar {
