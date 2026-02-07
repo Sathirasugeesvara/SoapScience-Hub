@@ -9,9 +9,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 15px 40px;
     background-color: #2bb3a3; 
     color: white;
+    position: relative;
 }
 
 .logo {
@@ -19,16 +20,27 @@
     font-weight: bold;
 }
 
+.navbar nav {
+    display: flex;
+    gap: 20px;
+}
+
 .navbar nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .navbar nav a:hover {
-    color: #025148; 
+    color: #025148;
+}
+
+.nav-toggle {
+    display: none; 
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
 }
 
 .home-content {
@@ -135,14 +147,31 @@
 @media (max-width: 768px) {
 
     .navbar {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+
+    .navbar nav {
+        display: none;
         flex-direction: column;
-        gap: 10px;
-        padding: 20px;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #2bb3a3;
+        border-radius: 8px;
+    }
+
+    .navbar nav.active {
+        display: flex;
     }
 
     .navbar nav a {
-        margin: 0 10px;
-        font-size: 15px;
+        margin: 10px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .nav-toggle {
+        display: block;
     }
 
     .home-content h1 {
