@@ -5,14 +5,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HERO SECTION */
 .hero {
     height: 100vh;
     background-image: url("../images/soap-bg.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
 }
 
+/* Overlay */
 .overlay {
     position: absolute;
     top: 0;
@@ -22,6 +25,7 @@
     background: rgba(0, 0, 0, 0.55);
 }
 
+/* Hero content */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -53,6 +57,7 @@
     line-height: 1.6;
 }
 
+/* Button */
 .btn {
     text-decoration: none;
     padding: 14px 35px;
@@ -66,4 +71,54 @@
 .btn:hover {
     background-color: #0097a7;
     transform: scale(1.05);
+}
+
+/* 📱 MOBILE RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .hero {
+        background-position: top center; /* focus on top part for smaller screens */
+        height: 100vh;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .btn {
+        padding: 12px 28px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: auto; /* allow height to adjust based on content */
+        padding: 80px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
 }
