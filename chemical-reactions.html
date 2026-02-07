@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chemical Reactions | Soap Modeling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🧼 SOAPSCIENCE - HUB</div>
+
+    <div class="nav-toggle" id="navToggle">&#9776;</div>
+
+    <nav id="navMenu">
+        <a href="homepage.html">Home</a>
+        <a href="theory.html">Theory Page</a>
+        <a href="calc.html">Calculator</a>
+        <a href="about.html">About</a>
+
+    </nav>
+</header>
+
+<main class="about-content">
+
+    <section class="about-section">
+        <h2>Introduction to Chemical Reactions</h2>
+        <p>
+            A chemical reaction is a process of molecular rearrangement in which one or more substances,
+            called <strong>reactants</strong>, are transformed into one or more new substances known as
+            <strong>products</strong>. During this process, chemical bonds are broken and new bonds are formed.
+        </p>
+        <p>
+            In applied mathematics, chemical reactions are studied using
+            <strong>differential equations</strong> to describe how the concentrations of substances
+            change over time.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <h2>Rate of a Chemical Reaction</h2>
+        <p>
+            The <strong>rate of a chemical reaction</strong> refers to how fast the concentration of a
+            reactant or product changes with respect to time.
+        </p>
+        <p>
+            Mathematically, reaction rates are often expressed as derivatives, such as:
+        </p>
+        <p>
+            <strong>dx/dt</strong> – the rate of change of concentration with time.
+        </p>
+        <p>
+            Differential equations allow us to predict the behavior of chemical systems and analyze
+            their stability and long-term behavior.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <h2>Second Order Chemical Reactions</h2>
+        <p>
+            A second order chemical reaction involves the interaction (collision) of
+            <strong>one molecule of substance A</strong> with
+            <strong>one molecule of substance B</strong> to produce a new substance X.
+        </p>
+        <p>
+            The reaction can be written as:
+        </p>
+        <p>
+            <strong>A + B → X</strong>
+        </p>
+        <p>
+            Let:
+        </p>
+        <ul>
+            <li><strong>a</strong> = initial concentration of A</li>
+            <li><strong>b</strong> = initial concentration of B</li>
+            <li><strong>x(t)</strong> = concentration of X at time t</li>
+        </ul>
+        <p>
+            Then the concentrations of A and B at time t become:
+        </p>
+        <ul>
+            <li>Concentration of A = a − x(t)</li>
+            <li>Concentration of B = b − x(t)</li>
+        </ul>
+    </section>
+
+    <section class="about-section">
+        <h2>Differential Equation for the Reaction</h2>
+        <p>
+            The rate of formation of substance X is proportional to the product of the
+            concentrations of A and B.
+        </p>
+        <p>
+            This leads to the differential equation:
+        </p>
+        <p>
+            <strong>dx/dt = λ (a − x)(b − x)</strong>
+        </p>
+        <p>
+            where <strong>λ</strong> is a positive constant representing the reaction rate.
+        </p>
+        <p>
+            This equation helps us find critical points, analyze stability, and solve
+            the initial value problem to determine the concentration at any time t.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <h2>Special Case: Equal Initial Concentrations</h2>
+        <p>
+            If the initial concentrations of A and B are equal (a = b),
+            the reaction simplifies significantly.
+        </p>
+        <p>
+            The differential equation becomes:
+        </p>
+        <p>
+            <strong>dx/dt = λ (a − x)²</strong>
+        </p>
+        <p>
+            This form is easier to analyze and is commonly used in modeling
+            symmetric chemical reactions.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <h2>Radioactive Decay</h2>
+        <p>
+            Radioactive decay is another important example of a chemical process
+            modeled using differential equations.
+        </p>
+        <p>
+            In radioactive decay, a constant fraction of atoms decays per unit time.
+            The rate of decay is proportional to the amount of material present.
+        </p>
+        <p>
+            The governing differential equation is:
+        </p>
+        <p>
+            <strong>dx/dt = −λx</strong>
+        </p>
+        <p>
+            The negative sign indicates that the amount of radioactive material
+            decreases over time.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <h2>Radioactive Decay Law</h2>
+        <p>
+            Solving the decay equation gives the radioactive decay law:
+        </p>
+        <p>
+            <strong>x(t) = x₀ e<sup>−λt</sup></strong>
+        </p>
+        <p>
+            This equation is used in many real-world applications such as
+            radiocarbon dating, nuclear physics, and medical imaging.
+        </p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>
+        Applied Mathematics – Mathematical Modeling<br>
+        Chemical Reactions
+    </p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
