@@ -21,15 +21,101 @@
     </nav>
 </header>
 
+<main class="about-content">
 
+<section class="about-section">
+    <h2>Soap Raw Material Calculator</h2>
+    <p>
+        This calculator models soap production using basic mathematical
+        relationships between oils, sodium hydroxide (NaOH), and water.
+        Different oils require different NaOH amounts due to their
+        saponification values.
+    </p>
+</section>
+
+<section class="about-section">
+    <h2>Input Raw Materials</h2>
+
+    <label>Oil Type:</label><br><br>
+    <select id="oilType" style="padding:10px; width:300px;">
+        <option value="0.183">Coconut Oil</option>
+        <option value="0.141">Palm Oil</option>
+        <option value="0.135">Olive Oil</option>
+    </select><br><br>
+
+    <label>Oil Amount (grams):</label><br><br>
+    <input type="number" id="oilAmount" placeholder="Enter oil amount"
+           style="padding:10px; width:300px;"><br><br>
+
+    <button class="btn" onclick="calculateSoap()">Calculate</button>
+</section>
+
+<section class="about-section">
+    <h2>Calculated Raw Materials</h2>
+
+    <p><strong>NaOH Required (g):</strong> <span id="naoh">-</span></p>
+    <p><strong>Water Required (g):</strong> <span id="water">-</span></p>
+    <p><strong>Estimated Reaction Rate:</strong> <span id="rate">-</span></p>
+</section>
+
+<section class="about-section">
+    <h2>Calculated Outputs</h2>
+
+    <p><strong>Soap Produced (g):</strong> <span id="soap">-</span></p>
+    <p><strong>Glycerol Produced (g):</strong> <span id="glycerol">-</span></p>
+</section>
+
+
+<section class="about-section">
+    <h2>Reaction Rate Model</h2>
+    <p>
+        A simplified first-order reaction model is used:
+    </p>
+    <p><strong>Rate = k × Oil Amount</strong></p>
+    <p>
+        where <strong>k</strong> is a proportionality constant.
+        This assumes a constant temperature and complete mixing.
+    </p>
+</section>
+
+<section class="about-section">
+    <h2>Differential Equation Model</h2>
+    <p>
+        Soap formation can be represented using a first-order
+        differential equation:
+    </p>
+    <p>
+        <strong>dS/dt = k(O − S)</strong>
+    </p>
+    <p>
+        where <br>
+        S = amount of soap formed<br>
+        O = initial oil quantity<br>
+        k = reaction constant
+    </p>
+    <p>
+        This model shows how soap formation increases over time
+        until all oil is consumed.
+    </p>
+</section>
+
+<section class="about-section">
+    <h2>Oil vs NaOH Graph</h2>
+    <canvas id="soapChart" width="500" height="300"
+            style="border:1px solid #ccc;"></canvas>
+</section>
+
+</main>
 
     <footer class="footer">
-    <p>
+      <p>
         Applied Mathematics – Mathematical Modeling<br>
         Chemical Reactions
-    </p>
-</footer>
+      </p>
+    </footer>
 
 <script src="js/script.js"></script>
+<script src="js/calc.js"></script>
+
 </body>
 </html>
